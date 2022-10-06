@@ -1,0 +1,69 @@
+<div
+  style="
+    display: flex;
+    height: 750px;
+    justify-content: center;
+    align-items: center;
+  "
+>
+  <div class="main-container">
+    <div class="selection-container">
+      <select #c1 name="" id="country1" (mouseleave)="changebase(c1.value)">
+        <option value="USD">US Dollar</option>
+        <option value="INR">Indian Rupee</option>
+        <option value="EUR">EURO</option>
+        <option value="KWD">Kuwaiti Dinar</option>
+        <option value="AFN">Afghanistan Afghani</option>
+        <option value="KYD">Cayman Islands dollar</option>
+        <option value="JPY">Japanese yen</option>
+        <option value="CZK">Czech koruna</option>
+        <option value="CAD">Canadian dollar</option>
+        <option value="NZD">New Zealand Dollar</option>
+        <option value="OMR">Omani Rial</option>
+        <option value="QAR">Qatari Riyal</option>
+        <option value="EGP">Egyptian Pound</option>
+        <option value="ERN">Eritrean Nakfa</option>
+        <option value="AMD">Armenian Dram</option>
+        <option value="CNH">Chaunrah</option>
+        <option value="CNY">Chinese Yuan</option>
+        <option value="AUD">Australian Dollar</option>
+        <option value="PHP">Philippine Peso</option>
+        <option value="MYR">Malaysian Ringgit</option>
+        <option value="NAD">Namibian Dollar</option>
+        <option value="PKR">Pakistani Rupee</option>
+      </select>
+      <p>To</p>
+      <select #c2 name="" id="country1" (mouseleave)="tocountry(c2.value)">
+        <option value="USD">US Dollar</option>
+        <option value="INR">Indian Rupee</option>
+        <option value="EUR">EURO</option>
+        <option value="KWD">Kuwaiti Dinar</option>
+        <option value="AFN">Afghanistan Afghani</option>
+        <option value="JPY">Japanese yen</option>
+        <option value="CZK">Czech koruna</option>
+        <option value="CAD">Canadian dollar</option>
+        <option value="NZD">New Zealand Dollar</option>
+        <option value="OMR">Omani Rial</option>
+        <option value="QAR">Qatari Riyal</option>
+        <option value="EGP">Egyptian Pound</option>
+        <option value="ERN">Eritrean Nakfa</option>
+        <option value="AMD">Armenian Dram</option>
+        <option value="CNH">Chaunrah</option>
+        <option value="CNY">Chinese Yuan</option>
+        <option value="AUD">Australian Dollar</option>
+        <option value="PHP">Philippine Peso</option>
+        <option value="MYR">Malaysian Ringgit</option>
+        <option value="NAD">Namibian Dollar</option>
+        <option value="PKR">Pakistani Rupee</option>
+      </select>
+    </div>
+    <button (click)="convert()">Submit</button>
+    <div class="result-container">
+      <p>1 {{ base }}</p>
+      <p>=</p>
+      <p>{{ result }} {{ cont2 }}</p>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
